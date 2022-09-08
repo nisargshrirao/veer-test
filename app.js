@@ -9,6 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/", router);
 
-app.listen(3000, ()=>{
+app.listen(process.env.PORT || 5000, ()=>{
     console.log("listeniing at port:3000")
 }) 
+
